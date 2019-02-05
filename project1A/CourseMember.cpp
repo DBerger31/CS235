@@ -16,7 +16,7 @@ CourseMember::CourseMember(num, name, surname){
 }
 
 int CourseMember::getID(){
-  return id_
+  return id_;
 }
 
 string CourseMember::getFirstName{
@@ -24,14 +24,5 @@ string CourseMember::getFirstName{
 }
 
 string CourseMember::getLastName{
-  return last_name_
-}
-
-int main(){
-
-  CourseMember Daniel(1510, "Daniel", "Berger")
-  cout << Daniel.getID()
-  cout << Daniel.getFirstName()
-  cout << Daniel.getLastName()
-
+  return last_name_;
 }
