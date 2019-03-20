@@ -1,6 +1,5 @@
 /*
 @file
-Project 1B
 Created by Daniel Berger on 2/12/19
 
 Instructor header
@@ -19,6 +18,7 @@ public:
    std::string getContact() const; // returns the contact info
    void setOffice(const std::string office); // sets the office
    void setContact(const std::string contact); // sets the contact info
+   virtual void displayMember() override; // prints first last office and email
 
 private:
    std::string office_; // office for professor

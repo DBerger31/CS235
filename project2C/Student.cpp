@@ -1,6 +1,5 @@
 /*
 @file
-Project 1B
 Created by Daniel Berger on 2/12/19
 
 Implementation of Student class
@@ -10,9 +9,10 @@ and a functon that returns the gpa
 */
 #include <iostream>
 #include <string>
-#include "CourseMember.hpp" 
+#include "CourseMember.hpp"
 #include "Student.hpp"
 
+using namespace std;
 
 // constructor for student that gives the student an id and fullname
 Student::Student(int id, std::string first, std:: string last) : CourseMember(id, first, last){
@@ -39,4 +39,8 @@ void Student::setMajor(const std::string major) {
 // sets the students gpa
 void Student::setGpa(const double gpa) {
    gpa_ = gpa;
+}
+
+void Student::displayMember() {
+   cout << first_name_ << " " << last_name_ << " majors in " << major_ << " with gpa: " << gpa_ << endl;
 }

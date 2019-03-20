@@ -1,6 +1,5 @@
 /*
 @file
-Project 1B
 Created by Daniel Berger on 2/12/19
 
 Student header
@@ -19,6 +18,7 @@ public:
    double getGpa() const; // returns students gpa
    void setMajor(const std::string major); // sets the students major
    void setGpa(const double gpa); // sets student gpa
+   virtual void displayMember() override; //prints first last major and gpa
 
 protected:
    std::string major_; // major of student
