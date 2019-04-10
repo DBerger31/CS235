@@ -247,7 +247,24 @@ Node<T>* LinkedList<T>::recursiveSelectionSort(Node<T>* current_first_ptr) {
       return;
    }
 
-   Node<T>* Temp = current_first_ptr -> getNext();
+   int min;
+   for (int i = 1; i < this->getLength() + 1; i++){
+      min = i;
+
+      //finding what positions to swap
+      for (int j = i + 1; j < this->getLength(); j++)
+      {
+         if (this->getEntry(j) < this->getEntry(min)){
+            min = j;
+         }
+      }
+
+      //swap part
+
+
+   }
+
+   Node<T>* temp = current_first_ptr -> getNext();
 
 }
 
